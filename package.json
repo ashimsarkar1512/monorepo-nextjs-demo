@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --filter ./apps/* dev",
-    "build": "pnpm -r --filter ./apps/* build",
+    "dev": "node api.js && pnpm -r --filter ./apps/* dev",
+    "build": "node api.js && pnpm -r --filter ./apps/* build",
     "lint": "pnpm -r --filter ./apps/* lint"
   },
   "packageManager": "pnpm@10.27.0"
